@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = "Leo Natan"
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/LeoNatan/LNNotificationsUI.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/changer/LNNotificationsUI.git", :tag => "#{s.version}" }
   s.source_files  = "LNNotificationsUI/**/*.{h,m}"
 end
