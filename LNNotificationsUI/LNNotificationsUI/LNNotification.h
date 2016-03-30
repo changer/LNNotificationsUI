@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Leo Natan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 @interface LNNotificationAction : NSObject
 
@@ -21,12 +21,12 @@
 @interface LNNotification : NSObject <NSCopying>
 
 + (instancetype)notificationWithMessage:(NSString*)message;
-+ (instancetype)notificationWithTitle:(NSString*)title message:(NSString*)message;
-+ (instancetype)notificationWithTitle:(NSString*)title message:(NSString*)message icon:(UIImage*)icon date:(NSDate*)date;
++ (instancetype)notificationWithMessage:(NSString*)message title:(NSString*)title;
++ (instancetype)notificationWithMessage:(NSString*)message title:(NSString*)title icon:(UIImage*)icon date:(NSDate*)date;
 
 - (instancetype)initWithMessage:(NSString*)message;
-- (instancetype)initWithTitle:(NSString*)title message:(NSString*)message;
-- (instancetype)initWithTitle:(NSString*)title message:(NSString*)message icon:(UIImage*)icon date:(NSDate*)date NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithMessage:(NSString*)message title:(NSString*)title;
+- (instancetype)initWithMessage:(NSString*)message title:(NSString*)title icon:(UIImage*)icon date:(NSDate*)date NS_DESIGNATED_INITIALIZER;
 
 @property (nonatomic, copy) NSString* title;
 @property (nonatomic, copy) NSString* message;

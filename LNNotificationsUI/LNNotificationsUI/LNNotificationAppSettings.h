@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Leo Natan. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 typedef NS_ENUM(NSUInteger, LNNotificationAlertStyle) {
 	/**
@@ -31,9 +31,9 @@ typedef NS_ENUM(NSUInteger, LNNotificationAlertStyle) {
 @property (nonatomic) LNNotificationAlertStyle alertStyle;
 @property (nonatomic) BOOL soundEnabled;
 
-@end
-
 /**
  The default app settings for notifications.
  */
-extern LNNotificationAppSettings *const LNNotificationDefaultAppSettings;
++ (LNNotificationAppSettings*)defaultNotificationAppSettings;
+
+@end

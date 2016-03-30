@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/LeoNatan/LNNotificationsUI"
   s.license      = "MIT"
   s.author       = "Leo Natan"
-  s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/changer/LNNotificationsUI.git", :tag => "#{s.version}" }
+  s.platform     = :ios, "8.0"
+  s.source       = { :git => "https://github.com/changer/LNNotificationsUI.git" }
   s.source_files  = "LNNotificationsUI/**/*.{h,m}"
 end

@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Leo Natan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import Foundation;
 
 @class LNNotification, LNNotificationAppSettings;
 
@@ -40,7 +40,7 @@ typedef NS_ENUM(NSUInteger, LNNotificationBannerStyle) {
 /**
  Clears pending notifications for the specified application identifier.
  */
-- (void)clearPendingNotificationForApplictionIdentifier:(NSString*)appIdentifier;
+- (void)clearPendingNotificationsForApplicationIdentifier:(NSString*)appIdentifier;
 
 /**
  Clears all pending notifications.

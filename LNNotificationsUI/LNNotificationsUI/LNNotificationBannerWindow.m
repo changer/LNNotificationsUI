@@ -65,6 +65,11 @@ static const CGFloat LNNotificationViewHeight = 68.0;
 	return [[UIApplication sharedApplication] statusBarStyle];
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+	return [[UIApplication sharedApplication] isStatusBarHidden];
+}
+
 @end
 
 @implementation LNNotificationBannerWindow
@@ -120,6 +125,7 @@ static const CGFloat LNNotificationViewHeight = 68.0;
 		[_swipeView addGestureRecognizer:_sgr];
 		
 		_tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_userTappedNotification)];
+		[_tgr requireGestureRecognizerToFail:_sgr];
 		[_swipeView addGestureRecognizer:_tgr];
 		
 		[vc.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_swipeView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_swipeView)]];
