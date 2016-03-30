@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ChangerNotificationsUI"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A framework for displaying notifications similar to Apple's iOS 7 and iOS 8 notifications."
   s.description  = <<-DESC
                    LNNotificationsUI is a framework for displaying notifications
